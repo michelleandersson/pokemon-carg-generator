@@ -9,11 +9,12 @@ body {
 }
 
 main {
-    border: 2px solid green;
-    border-radius: 5px;
+    border: 4px solid green;
+    border-radius: 10px;
     margin: 0 auto;
     width: 80%;
-
+    background: rgb(206,249,161,0.7);
+    background: linear-gradient(180deg, rgba(206,249,161,0.7) 0%, rgba(124,163,93,0.7) 48%);
 }
 
 .main-title {
@@ -22,86 +23,80 @@ main {
 }
 
 .sub-title {
-    color: #310655;
+    color: #1c0233;
 }
 
 p {
-    color: #180044;
+    color: black;
 }
   
-
-  
-  .letter-spacing {
+.letter-spacing {
     letter-spacing: 3px;
-  }
-  
-  
-  h1,
-  h2 {
-    color: palevioletred;
+}
+   
+h1, h2 {
     font-family: arial;
-  }
+}
   
-  h1,
-  h2,
-  p {
+h1, h2,p {
     padding: 0.5rem;
-  }
+}
   
-  form {
+form {
     padding: 1rem;
     padding-top: 0;
-  }
+}
   
-  .form-title {
+.form-title {
     text-align: center;
-  }
+    color: #1c0233;
+}
   
-  form *:not(em) {
+form *:not(em) {
     display: block;
     margin: 1rem auto;
     text-align: center;
-  }
+}
   
-  form input[type="text"] {
+form input[type="text"] {
     max-width: 90%;
     padding: 1rem;
     font-size: 2rem;
-    border: 1px solid palevioletred;
-  }
+    border: 1px solid green;
+}
   
-  #search-error p {
+#search-error p {
     font-weight: bold;
     color: red;
-  }
+}
   
-  #submit-search {
+#submit-search {
     padding: 1rem;
     font-size: 1rem;
     min-width: 200px;
     min-height: 30px;
-    border: 1px solid palevioletred;
-    color: palevioletred;
+    border: 1px solid green;
+    color: black;
     background-color: white;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
     transition: 0.1s all ease-in;
-  }
+}
   
-  #submit-search:hover {
-    background-color: palevioletred;
+#submit-search:hover {
+    background-color: rgb(64, 119, 64);
     color: white;
-  }
+}
   
-  #card-list {
+#card-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding: 0;
     margin: 0;
-  }
+}
   
   #card-list li {
     text-align: center;
