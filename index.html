@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
-    <title>Pokemon Card Generator</title>
+    <title>Pokémon Card Generator</title>
 </head>
 <body>
-
+    <main>
+        <h1 class="main-title">Welcome to the Pokémon Card Generator!</h1>
+        <section>
+          <h2 class="sub-title">How to use: </h2>
+          <p class="how-to-info">
+            Looking for a specific Pokémon card? Just search for the name of the 
+            Pokémon in the field below and all card versions of that Pokémon will
+            show up! 
+          </p>
+        </section><!--end main how to section-->
+        <section>
+          <h2 class="letter-spacing form-title">Search for a Pokémon</h2>
+          <form>
+            <label for="search">Pokémon name:</label>
+            <input type="text" name="search" id="search" aria-describedby="search-help">
+            <span id="search-help">e.g. <em>Bulbasaur</em> (Enter at least three letters)</span>
+            <span id="search-error"></span>
+            <button type="submit" id="submit-search">Search</button>
+          </form>
+        </section><!--end search form-->
+        <section id="results">
+          <h2>Results</h2>
+          <div id="results-outcome"></div>
+          <ul id="card-list"></ul>
+        </section><!--end search result-->
+      </main>
 
     <script src="script/index.js"></script>
 </body>
