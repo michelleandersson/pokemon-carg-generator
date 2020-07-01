@@ -35,13 +35,17 @@ const searchCards = event => {
 
         if (cards.length > 0) {
           const listItems = cards.map(function(card) {
+            const pokemonInfo = document.createElement("p"); 
             const listItem = document.createElement("li");
             const cardImage = document.createElement("img");
             const cardTitle = document.createElement("h3");
+            pokemonInfo.innerText = `${card.name} is a ${card.types} and ${card.subtype} Pokemon.`
             cardImage.src = card.imageUrl;
             cardImage.alt = `${card.name} from ${card.set}`;
             cardTitle.innerText = `${card.name} from ${card.set}`;
+            console.log(`${card.types}`); 
 
+            listItem.append(pokemonInfo); 
             listItem.append(cardImage);
             listItem.append(cardTitle);
 
@@ -68,3 +72,4 @@ const searchCards = event => {
 };
 
 if (searchButton) searchButton.addEventListener("click", searchCards);
+
